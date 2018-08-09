@@ -1,0 +1,37 @@
+Your mission
+
+Given a sample sentence, you will create a dictionary that helps predict which words usually come after a given word. This dictionary will hold, for each word as key, a dictionary of words that can come after it and how many times it happened in the sample sentence.
+
+Your function must be named generate_table and in the file named markov.py.
+
+def generate_table(s):
+    """
+    From a string 's', generate a dictionary where, for a given word, you get
+    the words that can come after it and the number of occurrences it happened in the string 's'.
+
+    Example:
+    If s == 'i am daniel i am french i like jiu-jitsu', return
+    {
+        'i': {
+            'am': 2,
+            'like': 1,
+        },
+        'am': {
+            'daniel': 1,
+            'french': 1,
+        },
+        'daniel': {
+            'i': 1,
+        },
+        'french': {
+            'i': 1,
+        },
+        'like': {
+            'jiu-jitsu': 1,
+        },
+        'jiu-jitsu': {
+        }
+    }
+    """
+
+

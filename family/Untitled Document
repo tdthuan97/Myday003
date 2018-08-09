@@ -1,0 +1,21 @@
+Your mission
+
+Write a function that takes two dictionaries and compares them. It will print the keys that are present in the first dictionary, but not in the second.
+
+Your function must be named find_diff and in the file named find_diff.py.
+
+def find_diff(d1, d2):
+	"""Given two dictionaries as arguments, the function compares them and prints the missing keys in the d2 dictionary. Missing keys should be sorted in the same order as they were in d1.
+
+	>>> find_diff({'to': "b", 'ti': "b", 'tu': "b", 'te': "b"}, {'to': "b", 'ti': "b", 'tu': "b", 'te': "b"})
+
+	>>> find_diff({'to': "b", 'ti': "b", 'tu': "b", 'te': "b", "truc": "fabs"}, {'to': "b", 'tu': "b", 'te': "b"})
+	Key ti not in d2
+	Key truc not in d2
+
+	>>> find_diff({'to': "b", 'ti': "b", 'tu': "b", 'te': {'tre': "b"}}, {'to': "b", 'tu': "b", 'te': "b"})
+	Key ti not in d2
+	Key te:tre not in d2
+    """
+
+

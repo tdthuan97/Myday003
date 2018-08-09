@@ -1,0 +1,57 @@
+Your mission
+
+To finish of this day, you will write a YAML parser. Your function will read a YAML string, and returns the corresponding dictionary.
+
+We will only test your code with valid YAML.
+
+Your function must be named loads and in the file named yaml.py.
+
+def loads(s):
+    """From a YAML string, return a dictionary.
+
+    >>> loads('key: value')
+    {'key': 'value'}
+    >>> loads('age: 21')
+    {'age': '21'}
+    >>> loads('name: James Bond')
+    {'name': 'James Bond'}
+    >>> loads('name: James Bond\\nage: 37')
+    {'name': 'James Bond', 'age': '37'}
+    >>> loads('John Do: 1337')
+    {'John Do': '1337'}
+    >>> loads('Hello:\\n  fr: Bonjour\\n  de: Hallo')
+    {'Hello': {'fr': 'Bonjour', 'de': 'Hallo'}}
+    >>> loads('Hello:\\n  fr: Bonjour\\n  de: Hallo')
+    {'Hello': {'fr': 'Bonjour', 'de': 'Hallo'}}
+    >>> loads('nest:\\n  ted:\\n    dict: ionary')
+    {'nest': {'ted': {'dict': 'ionary'}}}
+
+    For this exercise, we will work with a subset of YAML.
+    In our subset, a YAML string is composed of elements of this form:
+    KEY: VALUE
+
+    The elements are separated by new lines (\n)
+    KEY is a string that doesn't contain ':'.
+    VALUE can either be a string that doesn't contain ':', or an other dict.
+
+    Example VALUE string:
+    hello: world
+
+    Example VALUE dict:
+    hello:
+      world: 1
+      john: 2
+
+    Here is a full YAML:
+    --------------------
+    What's up ?: Nothing
+    Is there anybody out there?: No
+    Staff:
+      Laurie: F
+      Mathieu: M
+      Lou: M
+      Daniel: M
+    Goldeneye: Pierce Brosnan
+    """
+
+

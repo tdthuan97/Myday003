@@ -1,0 +1,30 @@
+Your mission
+
+Write a function that gets the language of the environment and returns a greeting according to that language.
+
+If the language is French (fr_FR) it returns Bonjour!, otherwise it returns Hello!.
+
+Your function must be named env_hello and in the file named env_hello.py.
+
+def env_hello():
+	""" Given no argument this function looks up the LANG environment variable and returns the appropriate greeting
+
+	With a fr_FR language environment variable
+	>>> env_hello()
+	'Bonjour!'
+
+	In any other case
+	>>> env_hello()
+	'Hello!'
+    """
+
+What's the environment?
+
+The environment is a list of data passed to all programs when they are executed. It contains useful variables like the language of the user, the current working directory, the home directory, etc.
+
+You can run the command env on your terminal to see which variables are present in your environment.
+
+In Python, the environment is accessible through the dictionary os.environ. This dictionary is available to your program once you have imported the module os. Your solution to the exercice should start like this:
+
+
+

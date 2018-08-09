@@ -1,0 +1,20 @@
+Your mission
+
+Write a function that takes an array of dictionaries as an argument and merges them into a single dictionary.
+
+Your function must be named merge_dict and in the file named merge_dict.py.
+
+def merge_dict(dictionaries):
+	"""Given any number of dictionaries, the function must merge all of them into a single dictionary.
+
+	>>> merge_dict([{'a':1,'b':2,'c':1,'d':2}, {'e':1,'f':2,'g':2}])
+	{'a': [1], 'b': [2], 'c': [1], 'd': [2], 'e': [1], 'f': [2], 'g': [2]}
+
+	>>> merge_dict([{'a':1,'b':2,'c':1,'d':2}, {'e':1,'f':2,'b':1,'g':2}, {'h':1,'i':2,'d':1,'b':2}])
+	{'a': [1], 'b': [2, 1, 2], 'c': [1], 'd': [2, 1], 'e': [1], 'f': [2], 'g': [2], 'h': [1], 'i': [2]}
+
+	>>> merge_dict([{'a':1,'b':2,'c':1,'d':2}])
+	{'a': [1], 'b': [2], 'c': [1], 'd': [2]}
+    """
+
+
